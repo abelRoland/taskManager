@@ -1,0 +1,31 @@
+body,
+html {
+	font-family: 'Arial', sans-serif;
+	height: 100%;
+    display: grid;
+    background-color: beige;
+}
+
+button {
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #dedede;
+    text-transform: uppercase;
+}
+main {
+	width: 650px;
+	height: auto;
+	border-radius: 10px;
+	border: 1px solid #dedede;
+	padding: 0;
+	margin: auto;
+    text-align: center;
+    background-color: #eaeaea;
+}
+
+div {
+    margin-top: 1em;
+    line-height: 2;
+}
