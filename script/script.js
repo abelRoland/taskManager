@@ -33,8 +33,7 @@
   * 
   */
 
-
-const start = () => {
+document.getElementById('start').addEventListener('click', function () {
 
 const nameAmount = prompt('How many students?');
 
@@ -86,11 +85,11 @@ const taskAmount = prompt('How many activities?');
     
         console.log(ranNums);
 
-    let print = 'Your result is:' + '<br>';
+    let print = `<h2>Your result is: </h2>`;
     for (let i = 0; i < names.length; i++) {   
-        print += 'Student ' + (names[i]) + ' needs to do activities: ' + (ranNums[i * 2]) + ' and ' + (ranNums[(i * 2) + 1]) + '<br>';
+        print += `<p>Student ${names[i]} needs to do activities: ${ranNums[i * 2]} and ${ranNums[(i * 2) + 1]}</p>`;
+        //print += 'Student ' + (names[i]) + ' needs to do activities: ' + (ranNums[i * 2]) + ' and ' + (ranNums[(i * 2) + 1]) + '<br>';
         document.getElementById('solution').innerHTML= print; 
     };
 
-
-}
+});
